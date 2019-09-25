@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
-  title: BitShares Explorer API
-  description: Exposes BitShares calls needed to explore the blockchain
+  title: Peerplays REST API
+  description: Exposes Peerplays calls needed to explore the blockchain
   version: '2.0.0'
 schemes:
   - http

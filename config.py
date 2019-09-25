@@ -1,7 +1,7 @@
 import os
 
 
-WEBSOCKET_URL = os.environ.get('WEBSOCKET_URL', "wss://api.bitshares-kibana.info/ws")
+WEBSOCKET_URL = os.environ.get('WEBSOCKET_URL', "ws://35.182.201.7:8090/ws")
 
 
 # Default connection to Elastic Search.
@@ -48,11 +48,11 @@ PROFILER = {
     'password': os.environ.get('PROFILER_PASSWORD', None),
 }
 
-CORE_ASSET_SYMBOL = 'BTS'
+CORE_ASSET_SYMBOL = 'PPY'
 CORE_ASSET_ID = '1.3.0'
 
-TESTNET = 0 # 0 = not in the testnet, 1 = testnet
-CORE_ASSET_SYMBOL_TESTNET = 'TEST'
+TESTNET = 1 # 0 = not in the testnet, 1 = testnet
+CORE_ASSET_SYMBOL_TESTNET = 'PPY'
 
 # Choose which APIs to expose, default to all.
-#EXPOSED_APIS = ['explorer', 'es_wrapper', 'udf']
+EXPOSED_APIS = ['explorer']
